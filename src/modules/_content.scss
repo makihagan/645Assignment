@@ -1,0 +1,76 @@
+#headline {
+    width: 100%;
+    height: 130px;
+    background: $contentBg;
+    text-align: center;
+    font-size: 1em;
+    margin: 0 auto;
+
+    h1 {
+        @include heading-text($white, 100, 2.5em);
+        padding-top: 50px;   
+
+        @include break(767px) {
+            font-size: 2em;
+            padding-top: 50px;
+        }
+
+        @include break(459px) {
+            font-size: 1.5em;
+            padding-top: 30px;
+        }
+    }
+}
+
+#content {
+    width: 940px;
+    margin: 20px auto;
+
+    @include break(959px) {
+        width: inherit;
+    }
+
+    h3 {
+        @include heading-text($grey, 400, 2em);
+
+        @include break(459px) {
+            font-size: 1.6em;
+        }
+    }
+
+    #products {
+        width: 460px;
+        float: left;
+
+        img {
+            float: left;
+            margin-right: 20px;
+        }
+
+        article {
+            margin-bottom: 40px;
+        }
+
+        h4 {
+            line-height: 1em;
+        }
+    }
+
+    #testimonials {
+        width: 460px;
+        float: right;
+    }
+
+    #products, #testimonials {
+        @include break(959px) {
+            width: 46%;
+            margin: 0 2%;
+        }
+
+        @include break(767px) {
+            width: 96%;
+            margin: 0 2%;
+            float: none;
+        }
+    }
+}

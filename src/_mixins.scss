@@ -1,0 +1,11 @@
+@mixin heading-text ($color, $f-weight, $size) {
+    color: $color;
+    font-weight: $f-weight;
+    font-size: $size;
+}
+
+@mixin break ($length) {
+    @media (max-width: $length) {
+        @content;
+    }
+}
