@@ -7,10 +7,14 @@ $contentBg:     #F25C43;
 $lightgrey:     #F5F6F6;
 $darkgrey:      #30353D;
 
+$textcolor:     $white;
 
 $font-body:     Roboto, sans-serif;
 
-$textcolor:     $white;
+$bg-image:      url('../images/bg.gif');
+$logo:          url('../images/logo.png');
+$social:        url('../images/social-media.png');
 
-
-
+$max1:          959px;
+$max2:          767px;
+$max3:          459px;

@@ -3,7 +3,7 @@ html {
         font-family: $font-body;
         font-size: 1em;
         line-height: 2em;
-        background: url(../images/bg.gif) $white repeat-x;
+        background: $bg-image $white repeat-x;
         margin: 0;
 
         main {
@@ -11,15 +11,15 @@ html {
             margin: 0 auto;
             padding: 0 10px;
 
-            @include break(959px) {
-                width: 768px;
+            @include break($max1) {
+                width: ($max2 + 1px);
             }
 
-            @include break(767px) {
-                width: 460px;
+            @include break($max2) {
+                width: ($max3 + 1px);
             }
 
-            @include break(459px) {
+            @include break($max3) {
                 width: 300px;
             }
         }

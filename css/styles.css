@@ -346,7 +346,7 @@ html body {
   font-family: Roboto, sans-serif;
   font-size: 1em;
   line-height: 2em;
-  background: url(../images/bg.gif) #FFF repeat-x;
+  background: url("../images/bg.gif") #FFF repeat-x;
   margin: 0;
 }
 
@@ -466,9 +466,11 @@ html body main {
 }
 
 figure {
+  background-image: url("../images/logo.png");
   width: 400px;
   height: 190px;
-  background: url("../../images/logo.png") no-repeat 0 50px;
+  background-repeat: no-repeat;
+  background-position: 0 50px;
   float: left;
   display: block;
   margin: 0;
@@ -601,19 +603,19 @@ footer p, footer img {
 }
 
 .social-media div.one {
-  background: url(../../images/social-media.png) 0 0;
+  background: url("../images/social-media.png") 0 0;
 }
 
 .social-media div.two {
-  background: url(../../images/social-media.png) -38px 0;
+  background: url("../images/social-media.png") -38px 0;
 }
 
 .social-media div.three {
-  background: url(../../images/social-media.png) -76px 0;
+  background: url("../images/social-media.png") -76px 0;
 }
 
 .social-media div.four {
-  background: url(../../images/social-media.png) -114px 0;
+  background: url("../images/social-media.png") -114px 0;
 }
 
 header {
